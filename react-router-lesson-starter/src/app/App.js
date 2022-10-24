@@ -9,19 +9,19 @@ import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 
-import { BrowserRouter as ROUTER } from 'react-router-dom'; 
+import { BrowserRouter as Router } from 'react-router-dom'; 
 
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <main>
         {/* Add Routes here! */}
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
