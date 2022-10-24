@@ -9,16 +9,18 @@ import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 
 import "./App.css";
 
 function App() {
   return (
+    
     <Router>
       <Header />
       <main>
-      <Route path='/articles/:title'>
+      <Switch>
+        <Route path='/articles/:title'>
           <Article />
         </Route>
         <Route path='/about'>
@@ -39,6 +41,7 @@ function App() {
         <Route path='/profile'>
           <Profile />
         </Route>
+        </Switch>
       </main>
       <Footer />
     </Router>
