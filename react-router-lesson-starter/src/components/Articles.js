@@ -27,7 +27,7 @@ export default function Articles () {
             return (
               <li key={article.slug}>
                 {/* Replace these a tags! */}
-                <Link href={`/articles/${article.slug}`}>
+                <Link to={`/articles/${article.slug}`}>
                   {article.title}
                 </Link>
               </li>
