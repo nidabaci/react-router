@@ -9,6 +9,8 @@ import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
 
+import { BrowserRouter as ROUTER } from 'react-router-dom'; 
+
 import "./App.css";
 
 function App() {
