@@ -24,11 +24,9 @@ function App() {
         <Route path='/about'>
           <About />
         </Route>
-
         <Route path='/authors/:name'>
           <Author />
         </Route>
-        
         <Route path='/sign-up'>
           <SignUp />
         </Route>
