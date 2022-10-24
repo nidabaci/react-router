@@ -17,6 +17,9 @@ export default function Profile () {
       <h1>{currentUser.username}</h1>
       <Link to={"/profile/edit"}>Edit</Link>
       {/* Render a route for EditProfileForm */}
+      <Route path='/profile/edit'>
+        <EditProfileForm />
+      </Route>
     </main>
   )
 }
